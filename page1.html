@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main page</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-column {
+            width: 40%;
+            background-color: #00aaff;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subheading {
+            font-size: 120%;
+            color: #fff;
+        }
+
+        .right-column {
+            width: 60%;
+            background-color: #fff;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 20%;
+            color: #000;
+        }
+
+        .help-button {
+            background-color: #ffcccc;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .button {
+            background-color: #00aaff;
+            color: #fff;
+            padding: 16px 72px;
+            border-radius: 8px;
+            margin-right: 16px;
+            text-decoration: none;
+        }
+
+        .right-column h2 {
+            color: inherit;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .button-container a {
+            color: #fff;
+            font-size: 25px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .button-container .help-button {
+            color: #000;
+        }
+
+        .left-column h1 {
+            margin-bottom: 5px;
+        }
+
+        .right-column p {
+            color: #00aaff;
+            font-size: 12px;
+        }
+
+        .button-container a.button:nth-child(2) {
+            background-color: #fff;
+            color: #00aaff;
+            border: 2px solid #00aaff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1 style="font-size: 300%;">Esi sveicinats KLUS</h1>
+            <hr style="width: 50%; border-color: #fff; margin: 10px auto;">
+            <h3 class="subheading">Tavas laboratorijas uzskaites sistema</h3>
+            <div class="image-upload">
+                <img src="himlab2.png" alt="picture">
+            </div>
+        </div>
+        <div class="right-column">
+            <h2 style="font-size: 52px;">Ko tu vēlies darit šodien?</h2>
+            <p style="color: #00aaff; font-size: 28px;">Pieklusti savas skolas laboratorijai</p>
+            <div class="button-container">
+                <a class="button" href="page2.html">Piesliegties</a>
+                <a class="button">Pieklut publiskiem datiem</a>
+            </div>
+        </div>
+    </div>
+    <a class="help-button" href="#">Zinot par kludu</a>
+</body>
+</html>
